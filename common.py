@@ -32,8 +32,8 @@ def cylinder(r: float, L: float, axis: str, seg: int = 64) -> list[list[Vec]]:
 
 def cube(a: float) -> list[list[Vec]]:
     h = a/2
-    v = [(-h,-h,-h),( h,-h,-h),( h, h,-h),(-h, h,-h),
-         (-h,-h, h),( h,-h, h),( h, h, h),(-h, h, h)]
+    v = [np.array([-h,-h,-h]), np.array([h,-h,-h]), np.array([h, h,-h]), np.array([-h, h,-h]),
+         np.array([-h,-h, h]), np.array([h,-h, h]), np.array([h, h, h]), np.array([-h, h, h])]
     q = [(0,1,2,3),(4,5,6,7),(0,1,5,4),
          (1,2,6,5),(2,3,7,6),(3,0,4,7)]
     f=[]
