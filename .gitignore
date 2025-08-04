@@ -1,2 +1,15 @@
 .DS_Store
 *.stl
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.log
+*.coverage
+*.DS_Store
+*.swp
+*.swo
+*.bak
+*.tmp
